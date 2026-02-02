@@ -1,66 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\",
+  "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\controllers\\venuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\controllers\\venuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\data\\migrations\\20260202092812_venuesadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\controllers\\venuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|c:\\users\\699635\\source\\repos\\citypointroomhire\\citypointroomhire\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|solutionrelative:citypointroomhire\\models\\venue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\data\\migrations\\20260202092629_usersadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\data\\migrations\\20260202092406_bookingsadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD7E861B-0DA5-4E4F-8BD9-31FEE0E5A7F8}|CityPointRoomHire\\CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeodd\\699635\\github\\citypointroomhire\\citypointroomhire\\citypointroomhire\\data\\migrations\\20260202090717_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,28 +58,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\appsettings.json",
+              "RelativeDocumentMoniker": "CityPointRoomHire\\appsettings.json",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\appsettings.json",
+              "RelativeToolTip": "CityPointRoomHire\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-02T09:51:09.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "20260202092812_VenuesAdded.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
               "RelativeToolTip": "CityPointRoomHire\\Data\\Migrations\\20260202092812_VenuesAdded.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T09:28:12.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "VenuesController.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\VenuesController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\VenuesController.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Controllers\\VenuesController.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\VenuesController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\VenuesController.cs",
               "RelativeToolTip": "CityPointRoomHire\\Controllers\\VenuesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -100,11 +101,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 13,
               "Title": "20260202092629_UsersAdded.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
               "RelativeToolTip": "CityPointRoomHire\\Data\\Migrations\\20260202092629_UsersAdded.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,11 +114,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\UsersController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\UsersController.cs",
               "RelativeToolTip": "CityPointRoomHire\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,11 +127,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "20260202092406_BookingsAdded.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
               "RelativeToolTip": "CityPointRoomHire\\Data\\Migrations\\20260202092406_BookingsAdded.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAwwBkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "BookingsController.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\BookingsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Controllers\\BookingsController.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\BookingsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Controllers\\BookingsController.cs",
               "RelativeToolTip": "CityPointRoomHire\\Controllers\\BookingsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -154,11 +155,11 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBsAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-02-02T09:16:05.786Z",
               "EditorCaption": ""
@@ -167,9 +168,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "CityPointRoomHire\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -180,9 +181,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CityPointRoomHire\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -191,24 +192,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Program.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Program.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Program.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Program.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Program.cs",
               "RelativeToolTip": "CityPointRoomHire\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T09:15:45.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\ErrorViewModel.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "CityPointRoomHire\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -219,9 +220,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Booking.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\Booking.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Models\\Booking.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\Booking.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\Booking.cs",
               "RelativeToolTip": "CityPointRoomHire\\Models\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -230,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\User.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\User.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\User.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\User.cs",
               "RelativeToolTip": "CityPointRoomHire\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -243,11 +244,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Venue.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\Venue.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\Venue.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Models\\Venue.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Models\\Venue.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Models\\Venue.cs",
               "RelativeToolTip": "CityPointRoomHire\\Models\\Venue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,11 +257,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20260202090717_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
               "RelativeDocumentMoniker": "CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\699635\\source\\repos\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
               "RelativeToolTip": "CityPointRoomHire\\Data\\Migrations\\20260202090717_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -1,4 +1,5 @@
 using CityPointRoomHire.Data;
+using CityPointRoomHireSeedData.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,17 +23,25 @@ builder.Services.AddAuthentication().AddGoogle(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//Seed the Data if the database is empty
+using (var scope = app.Services.CreateScope())
 {
-    app.UseMigrationsEndPoint();
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    await SeedData.SeedBookingsAsync(context); //Seed data if necessary
+    await SeedData.SeedVenuesAsync(context);
 }
-else
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseMigrationsEndPoint();
+    }
+    else
+    {
+        app.UseExceptionHandler("/Home/Error");
+        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+        app.UseHsts();
+    }
 
 app.UseHttpsRedirection();
 app.UseRouting();

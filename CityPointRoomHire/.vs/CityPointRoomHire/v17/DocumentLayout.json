@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "CityPointRoomHire\\Data\\SeedData.cs",
               "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPointRoomHire\\CityPointRoomHire\\Data\\SeedData.cs",
               "RelativeToolTip": "CityPointRoomHire\\Data\\SeedData.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAmwDUAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAmwCwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T11:05:03.229Z",
               "IsPinned": true,
@@ -57,8 +57,7 @@
               "RelativeToolTip": "CityPointRoomHire\\Views\\Venues\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T11:56:46.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T11:56:46.343Z"
             },
             {
               "$type": "Document",
@@ -70,8 +69,7 @@
               "RelativeToolTip": "CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T11:55:17.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T11:55:17.503Z"
             },
             {
               "$type": "Document",
@@ -95,8 +93,7 @@
               "RelativeToolTip": "CityPointRoomHire\\Views\\Bookings\\Index.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T11:29:08.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T11:29:08.098Z"
             },
             {
               "$type": "Document",
@@ -108,8 +105,7 @@
               "RelativeToolTip": "CityPointRoomHire\\Models\\Booking.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:10:52.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T09:10:52.042Z"
             },
             {
               "$type": "Document",

@@ -24,11 +24,11 @@ namespace CityPointRoomHire.Data.Migrations
 
             modelBuilder.Entity("CityPointRoomHire.Models.Booking", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("BookingId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BookingId"));
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -39,21 +39,27 @@ namespace CityPointRoomHire.Data.Migrations
                     b.Property<int>("TotalCost")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("VenueId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("BookingId");
+
+                    b.HasIndex("VenueId");
 
                     b.ToTable("Booking");
                 });
 
             modelBuilder.Entity("CityPointRoomHire.Models.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -70,18 +76,18 @@ namespace CityPointRoomHire.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("UserId");
 
                     b.ToTable("User");
                 });
 
             modelBuilder.Entity("CityPointRoomHire.Models.Venue", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("VenueId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VenueId"));
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -98,7 +104,7 @@ namespace CityPointRoomHire.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("VenueId");
 
                     b.ToTable("Venue");
                 });
@@ -305,6 +311,17 @@ namespace CityPointRoomHire.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("CityPointRoomHire.Models.Booking", b =>
+                {
+                    b.HasOne("CityPointRoomHire.Models.Venue", "Venue")
+                        .WithMany("Bookings")
+                        .HasForeignKey("VenueId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Venue");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -354,6 +371,11 @@ namespace CityPointRoomHire.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("CityPointRoomHire.Models.Venue", b =>
+                {
+                    b.Navigation("Bookings");
                 });
 #pragma warning restore 612, 618
         }

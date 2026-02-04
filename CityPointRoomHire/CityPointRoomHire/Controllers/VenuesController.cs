@@ -34,7 +34,7 @@ namespace CityPointRoomHire.Controllers
             }
 
             var venue = await _context.Venue
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.VenueId == id);
             if (venue == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,VenueName,City,Postcode,HourlyRate")] Venue venue)
+        public async Task<IActionResult> Create([Bind("VenueId,VenueName,City,Postcode,HourlyRate")] Venue venue)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,VenueName,City,Postcode,HourlyRate")] Venue venue)
+        public async Task<IActionResult> Edit(int id, [Bind("VenueId,VenueName,City,Postcode,HourlyRate")] Venue venue)
         {
-            if (id != venue.Id)
+            if (id != venue.VenueId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace CityPointRoomHire.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VenueExists(venue.Id))
+                    if (!VenueExists(venue.VenueId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace CityPointRoomHire.Controllers
             }
 
             var venue = await _context.Venue
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.VenueId == id);
             if (venue == null)
             {
                 return NotFound();
@@ -151,7 +151,7 @@ namespace CityPointRoomHire.Controllers
 
         private bool VenueExists(int id)
         {
-            return _context.Venue.Any(e => e.Id == id);
+            return _context.Venue.Any(e => e.VenueId == id);
         }
     }
 }

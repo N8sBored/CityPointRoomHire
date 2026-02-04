@@ -22,7 +22,8 @@ namespace CityPointRoomHire.Controllers
         // GET: Bookings
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Booking.ToListAsync());
+            var applicationDbContext = _context.Booking.Include(b => b.Venue);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Bookings/Details/5
@@ -34,7 +35,8 @@ namespace CityPointRoomHire.Controllers
             }
 
             var booking = await _context.Booking
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(b => b.Venue)
+                .FirstOrDefaultAsync(m => m.BookingId == id);
             if (booking == null)
             {
                 return NotFound();
@@ -46,6 +48,7 @@ namespace CityPointRoomHire.Controllers
         // GET: Bookings/Create
         public IActionResult Create()
         {
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId");
             return View();
         }
 
@@ -54,7 +57,7 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,VenueId,StartDate,EndDate,TotalCost")] Booking booking)
+        public async Task<IActionResult> Create([Bind("BookingId,UserId,VenueId,StartDate,EndDate,TotalCost")] Booking booking)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +65,7 @@ namespace CityPointRoomHire.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
             return View(booking);
         }
 
@@ -78,6 +82,7 @@ namespace CityPointRoomHire.Controllers
             {
                 return NotFound();
             }
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
             return View(booking);
         }
 
@@ -86,9 +91,9 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,VenueId,StartDate,EndDate,TotalCost")] Booking booking)
+        public async Task<IActionResult> Edit(int id, [Bind("BookingId,UserId,VenueId,StartDate,EndDate,TotalCost")] Booking booking)
         {
-            if (id != booking.Id)
+            if (id != booking.BookingId)
             {
                 return NotFound();
             }
@@ -102,7 +107,7 @@ namespace CityPointRoomHire.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!BookingExists(booking.Id))
+                    if (!BookingExists(booking.BookingId))
                     {
                         return NotFound();
                     }
@@ -113,6 +118,7 @@ namespace CityPointRoomHire.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["VenueId"] = new SelectList(_context.Venue, "VenueId", "VenueId", booking.VenueId);
             return View(booking);
         }
 
@@ -125,7 +131,8 @@ namespace CityPointRoomHire.Controllers
             }
 
             var booking = await _context.Booking
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(b => b.Venue)
+                .FirstOrDefaultAsync(m => m.BookingId == id);
             if (booking == null)
             {
                 return NotFound();
@@ -151,7 +158,7 @@ namespace CityPointRoomHire.Controllers
 
         private bool BookingExists(int id)
         {
-            return _context.Booking.Any(e => e.Id == id);
+            return _context.Booking.Any(e => e.BookingId == id);
         }
     }
 }

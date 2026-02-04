@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.VenueId)
+                @Html.DisplayNameFor(model => model.UserId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.StartDate)
@@ -24,6 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.TotalCost)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Venue)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -31,7 +34,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.VenueId)
+                @Html.DisplayFor(modelItem => item.UserId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
@@ -43,9 +46,12 @@
                 @Html.DisplayFor(modelItem => item.TotalCost)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @Html.DisplayFor(modelItem => item.Venue.VenueId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookingId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookingId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookingId">Delete</a>
             </td>
         </tr>
 }

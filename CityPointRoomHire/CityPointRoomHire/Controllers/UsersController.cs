@@ -34,7 +34,7 @@ namespace CityPointRoomHire.Controllers
             }
 
             var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (user == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,Email,EmailVerified")] User user)
+        public async Task<IActionResult> Create([Bind("UserId,FirstName,LastName,Email,EmailVerified")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace CityPointRoomHire.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,Email,EmailVerified")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("UserId,FirstName,LastName,Email,EmailVerified")] User user)
         {
-            if (id != user.Id)
+            if (id != user.UserId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace CityPointRoomHire.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.Id))
+                    if (!UserExists(user.UserId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace CityPointRoomHire.Controllers
             }
 
             var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UserId == id);
             if (user == null)
             {
                 return NotFound();
@@ -151,7 +151,7 @@ namespace CityPointRoomHire.Controllers
 
         private bool UserExists(int id)
         {
-            return _context.User.Any(e => e.Id == id);
+            return _context.User.Any(e => e.UserId == id);
         }
     }
 }

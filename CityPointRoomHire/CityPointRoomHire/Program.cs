@@ -1,5 +1,4 @@
 using CityPointRoomHire.Data;
-using CityPointRoomHireSeedData.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,14 +21,6 @@ builder.Services.AddAuthentication().AddGoogle(options =>
 });
 
 var app = builder.Build();
-
-//Seed the Data if the database is empty
-using (var scope = app.Services.CreateScope())
-{
-    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    await SeedData.SeedBookingsAsync(context); //Seed data if necessary
-    await SeedData.SeedVenuesAsync(context);
-}
 
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())

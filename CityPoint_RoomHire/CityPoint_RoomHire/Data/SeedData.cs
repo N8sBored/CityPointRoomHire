@@ -20,22 +20,22 @@ namespace CityPoint_RoomHireSeedData.Data
                 if (user1 != null && user2 != null)
                 {
                     var Bookings = new List<Booking>
-                    {
-                        new Booking
-                        {
-                            StartDate = DateTime.Now,
-                            EndDate = DateTime.Now,
-                            UserId = user1.Id,
-                            TotalCost = 1
-                        },
-                        new Booking
-                        {
-                            StartDate = DateTime.Now,
-                            EndDate = DateTime.Now,
-                            UserId = user2.Id,
-                            TotalCost = 2
-                        }
-                    };
+            {
+                new Booking
+                {
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.Now,
+                    UserId = user1.Id,
+                    TotalCost = 1
+                },
+                new Booking
+                {
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.Now,
+                    UserId = user2.Id,
+                    TotalCost = 2
+                }
+            };
                     context.Booking.AddRange(Bookings);
                     await context.SaveChangesAsync();
                 }
@@ -64,6 +64,32 @@ namespace CityPoint_RoomHireSeedData.Data
                 };
                 await context.Venue.AddRangeAsync(Venues);
                 await context.SaveChangesAsync();
+            }
+        }
+        public static async Task SeedRoles(IServiceProvider serviceProvider, UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        {
+            //Create roles if none exist
+            string[] roleNames = { "Admin", "Manager", "User" };
+            foreach (var roleName in roleNames)
+            {
+                var roleExist = await roleManager.RoleExistsAsync(roleName);
+                if (!roleExist)
+                {
+                    var role = new IdentityRole(roleName);
+                    await roleManager.CreateAsync(role);
+                }
+            }
+            var adminUser = await userManager.FindByEmailAsync("admin@example.com");
+            if (adminUser == null)
+            {
+                adminUser = new IdentityUser { UserName = "admin", Email = "admin@example.com", EmailConfirmed = true };
+                await userManager.CreateAsync(adminUser, "Admin@123");
+            }
+
+            //Add admin role if not already assigned
+            if(!await userManager.IsInRoleAsync(adminUser, "Admin"))
+            {
+                await userManager.AddToRoleAsync(adminUser, "Admin");
             }
         }
     }

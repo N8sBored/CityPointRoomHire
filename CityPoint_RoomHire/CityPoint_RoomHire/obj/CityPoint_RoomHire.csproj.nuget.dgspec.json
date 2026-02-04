@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\699635\\source\\repos\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj": {}
+    "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj": {}
   },
   "projects": {
-    "C:\\Users\\699635\\source\\repos\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj": {
+    "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\699635\\source\\repos\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj",
+        "projectUniqueName": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj",
         "projectName": "CityPoint_RoomHire",
-        "projectPath": "C:\\Users\\699635\\source\\repos\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj",
+        "projectPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire.csproj",
         "packagesPath": "C:\\Users\\699635\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\699635\\source\\repos\\CityPoint_RoomHire\\CityPoint_RoomHire\\obj\\",
+        "outputPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeOdd\\699635\\GitHub\\CityPointRoomHire\\CityPoint_RoomHire\\CityPoint_RoomHire\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Google": {
+              "target": "Package",
+              "version": "[9.0.12, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -67,8 +71,14 @@
               "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[9.0.12, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.12, )"
             }
           },
           "imports": [

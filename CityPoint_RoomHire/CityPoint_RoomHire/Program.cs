@@ -32,14 +32,8 @@ using (var scope = app.Services.CreateScope())
     await SeedData.SeedRoles(services, userManager, roleManager);
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     await SeedData.SeedVenuesAsync(context);
-};
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
-    var context = services.GetRequiredService<ApplicationDbContext>();
     await SeedData.SeedBookingsAsync(services, userManager);
-}
+};
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

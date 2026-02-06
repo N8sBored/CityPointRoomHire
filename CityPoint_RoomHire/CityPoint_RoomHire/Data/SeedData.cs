@@ -19,6 +19,8 @@ namespace CityPoint_RoomHireSeedData.Data
 
                 if (user1 != null && user2 != null)
                 {
+                    var venue1 = await context.Venue.FirstOrDefaultAsync(x => x.VenueName == "Venue 1");
+                    var venue2 = await context.Venue.FirstOrDefaultAsync(x => x.VenueName == "Venue 2");
                     var Bookings = new List<Booking>
             {
                 new Booking
@@ -26,14 +28,16 @@ namespace CityPoint_RoomHireSeedData.Data
                     StartDate = DateTime.Now,
                     EndDate = DateTime.Now,
                     UserId = user1.Id,
-                    TotalCost = 1
+                    TotalCost = 1,
+                    VenueId = venue1.VenueId
                 },
                 new Booking
                 {
                     StartDate = DateTime.Now,
                     EndDate = DateTime.Now,
                     UserId = user2.Id,
-                    TotalCost = 2
+                    TotalCost = 2,
+                    VenueId = venue2.VenueId
                 }
             };
                     context.Booking.AddRange(Bookings);
@@ -60,6 +64,34 @@ namespace CityPoint_RoomHireSeedData.Data
                         HourlyRate = 15,
                         Postcode = "BM2JXT",
                         VenueName = "Venue 2"
+                    },
+                    new Venue
+                    {
+                        City = "London",
+                        HourlyRate = 20,
+                        Postcode = "EC1BMD",
+                        VenueName = "Venue 3"
+                    },
+                    new Venue
+                    {
+                        City = "Wolverhampton",
+                        HourlyRate = 12,
+                        Postcode = "WV14KPS",
+                        VenueName = "Venue 4"
+                    },
+                    new Venue
+                    {
+                        City = "Liverpool",
+                        HourlyRate = 15,
+                        Postcode = "CH41PQS",
+                        VenueName = "Venue 5"
+                    },
+                    new Venue
+                    {
+                        City = "Manchester",
+                        HourlyRate = 22,
+                        Postcode = "M11AS",
+                        VenueName = "Venue 6"
                     }
                 };
                 await context.Venue.AddRangeAsync(Venues);
@@ -87,9 +119,47 @@ namespace CityPoint_RoomHireSeedData.Data
             }
 
             //Add admin role if not already assigned
-            if(!await userManager.IsInRoleAsync(adminUser, "Admin"))
+            if (!await userManager.IsInRoleAsync(adminUser, "Admin"))
             {
                 await userManager.AddToRoleAsync(adminUser, "Admin");
+            }
+
+            // Create User1
+            var user1 = await userManager.FindByEmailAsync("User1@example.com");
+            if (user1 == null)
+            {
+                user1 = new IdentityUser
+                {
+                    UserName = "user1",
+                    Email = "User1@example.com",
+                    EmailConfirmed = true
+                };
+                await userManager.CreateAsync(user1, "User1@123");
+            }
+
+            // Add User role
+            if (!await userManager.IsInRoleAsync(user1, "User"))
+            {
+                await userManager.AddToRoleAsync(user1, "User");
+            }
+
+            // Create User2
+            var user2 = await userManager.FindByEmailAsync("User2@example.com");
+            if (user2 == null)
+            {
+                user2 = new IdentityUser
+                {
+                    UserName = "user2",
+                    Email = "User2@example.com",
+                    EmailConfirmed = true
+                };
+                await userManager.CreateAsync(user2, "User2@123");
+            }
+
+            // Add User role
+            if (!await userManager.IsInRoleAsync(user2, "User"))
+            {
+                await userManager.AddToRoleAsync(user2, "User");
             }
         }
     }

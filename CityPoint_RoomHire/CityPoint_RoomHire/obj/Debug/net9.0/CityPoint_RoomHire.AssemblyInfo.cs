@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CityPoint_RoomHire")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbb7e6a057cfaff58719771223285e0d481e4a60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5af39036ca6b4f65c2230b3368eecaee77c98a99")]
 [assembly: System.Reflection.AssemblyProductAttribute("CityPoint_RoomHire")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CityPoint_RoomHire")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

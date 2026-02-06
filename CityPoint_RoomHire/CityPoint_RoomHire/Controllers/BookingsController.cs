@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPoint_RoomHire.Data;
 using CityPoint_RoomHire.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace CityPoint_RoomHire.Controllers
 {
@@ -22,8 +24,14 @@ namespace CityPoint_RoomHire.Controllers
         // GET: Bookings
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Booking.Include(b => b.Venue);
-            return View(await applicationDbContext.ToListAsync());
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var userData = await _context.Booking.Where(x => x.UserId == userId).ToListAsync();
+
+            if (userData == null)
+                return Unauthorized();
+
+            return View(userData);
         }
 
         // GET: Bookings/Details/5
@@ -45,10 +53,11 @@ namespace CityPoint_RoomHire.Controllers
             return View(booking);
         }
 
+        [Authorize]
         // GET: Bookings/Create
-        public IActionResult Create()
+        public IActionResult Create(int VenueId)
         {
-            ViewData["VenueId"] = new SelectList(_context.Set<Venue>(), "VenueId", "VenueId");
+            ViewBag.VenueId = VenueId;
             return View();
         }
 
@@ -59,6 +68,28 @@ namespace CityPoint_RoomHire.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("BookingId,UserId,VenueId,StartDate,EndDate,TotalCost")] Booking booking)
         {
+            var Venue = await _context.Venue.FindAsync(booking.VenueId);
+
+            if(Venue == null)
+            {
+                return View(booking);
+            }
+
+            booking.Venue = Venue;
+
+            ModelState.Remove("Venue");
+
+            var userID = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userID == null)
+            {
+                return NotFound();
+            }
+
+            booking.UserId = userID;
+
+            ModelState.Remove("UserID");
+
             if (ModelState.IsValid)
             {
                 _context.Add(booking);
@@ -69,6 +100,7 @@ namespace CityPoint_RoomHire.Controllers
             return View(booking);
         }
 
+        [Authorize]
         // GET: Bookings/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -122,6 +154,7 @@ namespace CityPoint_RoomHire.Controllers
             return View(booking);
         }
 
+        [Authorize]
         // GET: Bookings/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

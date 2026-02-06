@@ -8,5 +8,15 @@ namespace CityPoint_RoomHire.Controllers
         {
             return View();
         }
+
+        public IActionResult Goals()
+        {
+            return View();
+        }
+
+        public IActionResult Offer()
+        {
+            return View();
+        }
     }
 }

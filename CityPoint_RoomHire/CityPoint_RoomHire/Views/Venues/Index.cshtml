@@ -9,6 +9,15 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form method="get" asp-action="FilterByPrice">
+    <label>Min Price:</label>
+    <input type = "number" name="minPrice" step="1"/>
+    <label>Max Price:</label>
+    <input type = "number" name="maxPrice" step="1"/>
+    <button type="submit">Filter</button>
+</form>
+<a asp-action="SortByPrice" asp-route-ascending="true">Sort by Price (Ascending)</a>
+<a asp-action="SortByPrice" asp-route-ascending="false">Sort by Price (Descending)</a>
 <table class="table">
     <thead>
         <tr>
@@ -44,6 +53,7 @@
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.VenueId">Edit</a> |
+                <a asp-controller="Bookings" asp-action="Create" asp-route-VenueId="@item.VenueId">Book Now</a> |
                 <a asp-action="Details" asp-route-id="@item.VenueId">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.VenueId">Delete</a>
             </td>

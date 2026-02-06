@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CityPoint_RoomHire.Data;
 using CityPoint_RoomHire.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CityPoint_RoomHire.Controllers
 {
@@ -43,6 +44,7 @@ namespace CityPoint_RoomHire.Controllers
             return View(venue);
         }
 
+        [Authorize]
         // GET: Venues/Create
         public IActionResult Create()
         {
@@ -65,6 +67,7 @@ namespace CityPoint_RoomHire.Controllers
             return View(venue);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Venues/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -116,6 +119,7 @@ namespace CityPoint_RoomHire.Controllers
             return View(venue);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Venues/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -148,6 +152,32 @@ namespace CityPoint_RoomHire.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+        public async Task<IActionResult> FilterByPrice(double minPrice, double maxPrice)
+        {
+            var filteredVenues = await _context.Venue.Where(x => x.HourlyRate >= minPrice && x.HourlyRate <= maxPrice).ToListAsync();
+            return View("Index", filteredVenues);
+        }
+
+
+        public async Task<IActionResult> SortByPrice(bool ascending)
+        {
+            if (ascending == true)
+            {
+                var SortedVenues = await _context.Venue.OrderBy(x => x.HourlyRate).ToListAsync();
+                return View("Index", SortedVenues);
+            }
+            else if(ascending == false)
+            {
+                var SortedVenues = await _context.Venue.OrderByDescending(x => x.HourlyRate).ToListAsync();
+                return View("Index", SortedVenues);
+            }
+            return View("Index");
+        }
+
+
+
 
         private bool VenueExists(int id)
         {
